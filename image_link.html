@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Website!</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#menu">Menu</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to our website! We are excited to share our content with you.</p>
+      <a href="https://www.example.com/technology"><img src="technology_image_url.jpg" alt="Technology"></a>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <a href="https://www.example.com/nature1"><img src="nature_image1_url.jpg" alt="Nature 1"></a>
+        <a href="https://www.example.com/nature2"><img src="nature_image2_url.jpg" alt="Nature 2"></a>
+        <a href="https://www.example.com/nature3"><img src="nature_image3_url.jpg" alt="Nature 3"></a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="https://www.example.com/food1"><img src="food_image1_url.jpg" alt="Food 1"></a> Food Item 1</li>
+        <li><a href="https://www.example.com/food2"><img src="food_image2_url.jpg" alt="Food 2"></a> Food Item 2</li>
+        <li><a href="https://www.example.com/food3"><img src="food_image3_url.jpg" alt="Food 3"></a> Food Item 3</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Image Links. All rights reserved.</p>
+  </footer>
+</body>
+</html>
